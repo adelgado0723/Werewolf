@@ -3,11 +3,8 @@
 ## Contents
 
 - [**About**](#about)
-
 - [**Commands**](#commands)
-
 - [**Server**](#server)
-
 - [**Client**](#client)
 
 
