@@ -73,7 +73,7 @@ class Server:
     PLAYERS_PER_GAME = 15
 
 
-    def __init__(self, host=socket.gethostbyname('0.0.0.0'), port=1301, allowReuseAddress=True, timeout=3):
+    def __init__(self, host=socket.gethostbyname('0.0.0.0'), port=2301, allowReuseAddress=True, timeout=3):
         self.address = (host, port)
         self.games = {} # Game Name -> Game
         self.players_games_map = {} # User Name -> Game Name
@@ -229,7 +229,7 @@ class Server:
                     player.socket.sendall("\n> Cannot join {0}.\n> {0} is a game in progress.".format(gameName).encode('utf8'))
 
         else:
-            self.help(clientSocket)
+            self.help(player)
 
     def play_turns(self, player, inputString, gameName):
         # Waiting in a non-blocking fashion

@@ -1,3 +1,4 @@
+import time
 import tkinter as tk
 from tkinter import messagebox
 import WerewolfClient as client
@@ -97,12 +98,18 @@ class ChatWindow(tk.Frame):
 
         self.send_message_button = tk.Button(parent, text="Send", width=10, bg="#CACACA", activebackground="#CACACA")
         self.send_message_button.grid(row=1, column=1, padx=5, sticky="we")
-
+        
+    def add_timestamp(self):
+        self.messageTextArea.insert("end", time.ctime() + "\n")
+        self.messageTextArea.see("end")
+        self.after(1000, self.add_timestamp)
+    
     def update_chat_window(self, message):
         self.messageTextArea.configure(state='normal')
         self.messageTextArea.insert(tk.END, message)
+        self.messageTextArea.yview(tk.END)
         self.messageTextArea.configure(state='disabled')
-
+       
     def update_user_list(self, user_message):
         users = user_message.split(' ')
 
