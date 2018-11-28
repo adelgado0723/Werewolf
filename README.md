@@ -74,9 +74,11 @@ To synchronize threads within a game, the “game thread” uses python threadin
 signals.  Games have the following stages:
 
 1. **Lobby** 
+
 	- Accepting players into game about to begin
 
 2. **Assigning Roles** 
+
 	- The game randomly assigns special roles (werewolf, healer, and sheriff)
 
 3. **Playing Turns**
