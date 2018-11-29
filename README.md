@@ -103,9 +103,9 @@ From Server Directory, execute:
 
  | **File Name**         | **Description**                                  |
  |-------------------|----------------------------------------------|
- | [Server/WerewolfServer.py](https://github.com/adelgado0723/Werewolf/blob/master/Server/WerewolfServer.py) | - Hosts Werewolf! application                |
- | [Server/Game.py](https://github.com/adelgado0723/Werewolf/blob/master/Server/Game.py) | - Structures and routines for running a game |
- | [Server/Player.py](https://github.com/adelgado0723/Werewolf/blob/master/Server/Player.py) | - Holds variables for client connections     |
+ | [Server/WerewolfServer.py](https://github.com/adelgado0723/Werewolf/Server/WerewolfServer.py) | - Hosts Werewolf! application                |
+ | [Server/Game.py](https://github.com/adelgado0723/Werewolf/Server/Game.py) | - Structures and routines for running a game |
+ | [Server/Player.py](https://github.com/adelgado0723/Werewolf/Server/Player.py) | - Holds variables for client connections     |
 	
 ### Notes:
 	
@@ -147,10 +147,10 @@ From Client Directory, execute:
 
  | **File Name**         | **Description**                                           |
  |-------------------|-------------------------------------------------------|
- | [Client/WerewolfClient.py](https://github.com/adelgado0723/Werewolf/blob/master/Client/WerewolfClient.py) | - Client socket wrapper class                         |
- | [Client/Main.py](https://github.com/adelgado0723/Werewolf/blob/master/Client/Main.py) | - Multithreaded GUI client for Werewolf! appplication |
- | [Client/BaseDialog.py](https://github.com/adelgado0723/Werewolf/blob/master/Client/BaseDialog.py) |  -  For Tkinter basic dialog |
- | [Client/BaseEntry.py](https://github.com/adelgado0723/Werewolf/blob/master/Client/BaseEntry.py) |  -  For Tkinter basic dialog |
+ | [Client/WerewolfClient.py](https://github.com/adelgado0723/Werewolf/Client/WerewolfClient.py) | - Client socket wrapper class                         |
+ | [Client/Main.py](https://github.com/adelgado0723/Werewolf/Client/Main.py) | - Multithreaded GUI client for Werewolf! appplication |
+ | [Client/BaseDialog.py](https://github.com/adelgado0723/Werewolf/Client/BaseDialog.py) |  -  For Tkinter basic dialog |
+ | [Client/BaseEntry.py](https://github.com/adelgado0723/Werewolf/Client/BaseEntry.py) |  -  For Tkinter basic dialog |
 
 
 ### Notes:
