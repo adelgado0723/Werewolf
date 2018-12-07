@@ -244,7 +244,7 @@ if __name__ == "__main__":
     # take a .jpg picture you like, add text with a program like PhotoFiltre
     '''
     
-    image_file = "images/WereWolf_512x512.gif"
+    image_file = "WereWolf_512x512.gif"
     #assert os.path.exists(image_file)
     # use Tkinter's PhotoImage for .gif files
      
