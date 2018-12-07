@@ -225,8 +225,8 @@ if __name__ == "__main__":
    
     screenSizeX = root.winfo_screenwidth()
     screenSizeY = root.winfo_screenheight()
-    frameSizeX = 640
-    frameSizeY = 480
+    frameSizeX = 512
+    frameSizeY = 512
     framePosX = (screenSizeX - frameSizeX) / 2
     framePosY = (screenSizeY - frameSizeY) / 2
 	
@@ -244,13 +244,13 @@ if __name__ == "__main__":
     # take a .jpg picture you like, add text with a program like PhotoFiltre
     '''
     
-    image_file = "images/WerewolfStartScreen.gif"
+    image_file = "images/WereWolf_512x512.gif"
     #assert os.path.exists(image_file)
     # use Tkinter's PhotoImage for .gif files
-    
+     
     image = tk.PhotoImage(file=image_file)
     canvas = tk.Canvas(root, height=frameSizeY, width=frameSizeX, bg="white")
-    canvas.create_image(framePosX-45, framePosY+95, image=image)
+    canvas.create_image(framePosX-170, framePosY+130, image=image)
     canvas.grid(column=0,row=0)
     # show the splash screen for 5000 milliseconds then destroy
     root.after(5000, ChatGUI, root)
