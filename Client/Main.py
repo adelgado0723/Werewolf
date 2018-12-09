@@ -231,6 +231,9 @@ if __name__ == "__main__":
     framePosY = (screenSizeY - frameSizeY) / 2
 	
     
+    print("FramePosX = ", framePosX, "FramePosY = ", framePosY)
+    print("Note: I am adding -170 to framePosX and +130 to framePosY")
+
     root.geometry('%dx%d+%d+%d' % (frameSizeX, frameSizeY, framePosX, framePosY))
     root.resizable(True, True)
     root.columnconfigure(0, weight=1)
@@ -250,7 +253,7 @@ if __name__ == "__main__":
      
     image = tk.PhotoImage(file=image_file)
     canvas = tk.Canvas(root, height=frameSizeY, width=frameSizeX, bg="white")
-    canvas.create_image(framePosX-170, framePosY+130, image=image)
+    canvas.create_image(frameSizeX/2, frameSizeY/2, image=image)
     canvas.grid(column=0,row=0)
     # show the splash screen for 5000 milliseconds then destroy
     root.after(5000, ChatGUI, root)
