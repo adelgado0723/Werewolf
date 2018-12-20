@@ -11,6 +11,8 @@
 
 ## About
 
+![SplashScreen](Client/images/WereWolf_512x512.gif)
+
 ***Werewolf!*** takes place in a chat room where users play the role of villagers
 investigating a series of crimes. They don’t know who the murderer is, but they
 do know that he/she passes off as a villager during the day. This has led them
